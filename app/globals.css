@@ -2,7 +2,6 @@
 
 @import "tailwindcss";
 
-
 html,
 body {
   width: 100dvw;
@@ -13,7 +12,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
+* {
+  transition: all 0.3s ease-in-out;
+}
 @theme {
   --font-georama: "Georama", sans-serif;
   --font-roboto: "Roboto Mono", monospace;
@@ -64,7 +65,7 @@ body {
 
 @layer components {
   .icon {
-    @apply p-1 hover:bg-gray-200 rounded hover:cursor-default;
+    @apply p-1 hover:bg-gray-200  rounded hover:cursor-pointer;
   }
 
   #welcome {

@@ -1,3 +1,9 @@
+import Navbar from "@/components/Navbar";
+
 export default function Home() {
-  return <main>Project Setup successful!</main>;
+  return (
+    <main>
+      <Navbar />
+    </main>
+  );
 }
